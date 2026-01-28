@@ -1,16 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Love</title>
+  <title>Love 💖</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff5f9e, #ffc371);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      width: 300px;
+    }
+
+    h1 {
+      color: #ff4081;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: #ff4081;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 18px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e73370;
+      transform: scale(1.05);
+    }
+
+    #msg {
+      margin-top: 20px;
+      font-size: 22px;
+      color: #333;
+    }
+  </style>
 </head>
-<body style="text-align:center; margin-top:100px;">
-  <button onclick="showLove()">Click me ❤️</button>
-  <h1 id="msg"></h1>
+
+<body>
+
+  <div class="box">
+    <h1>💌 Love Button</h1>
+    <button onclick="showLove()">Click here ❤️</button>
+    <div id="msg"></div>
+  </div>
 
   <script>
     function showLove() {
-      document.getElementById("msg").innerHTML = "I love you Nour 💖";
+      document.getElementById("msg").innerHTML = 
+      "بحبك يا نوري ❤️<br>I love you Noory 💕";
     }
   </script>
+
 </body>
 </html>
